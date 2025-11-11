@@ -1,0 +1,8 @@
+{
+  "model_name": "all-mpnet-base-v2",
+  "device": "cuda",
+  "num_pos": 20000,
+  "num_neg_for_threshold": 20000,
+  "threshold_percentile": 95.0,
+  "threshold": 0.4529325067996979
+}
