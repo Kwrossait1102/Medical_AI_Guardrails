@@ -100,13 +100,19 @@ This design ensures the system is:
 
 **SuicideDetector:**  
 
-- Embedding-based detection using suicide-related prototypes.  
-- Returns an empathetic predefined message encouraging users to seek professional help (e.g., “In Germany, call 112 or 116 123”).  
+- **Goal:** Detect self-harm intent or suicide-related statements and respond responsibly.  
+- **Method:**  
+  - Used **SentenceTransformer (`all-mpnet-base-v2`)** to compute embeddings of user input and suicide-related prototypes.  
+  - Compared cosine similarity against threshold derived from benign samples; if exceeded, classify as high risk.  
+  - Returns a predefined empathetic message encouraging users to seek professional help (e.g., “In Germany, call 112 or 116 123”).  
+- **Rational:**  
+  The **`all-mpnet-base-v2`** model provides stronger **semantic depth and emotional sensitivity**, better capturing subtle expressions of distress compared with lighter models like MiniLM.  
 
 **EmergencyDetector:**  
 
+- **Goal:** Detect emergency situations.
 - **Rule-based keyword detection** (e.g., “heart attack”, “stroke”, “bleeding heavily”).  
-- **Reasoning:**  
+- **Rational:**  
   1. **Simplicity and speed:** Emergency cases require immediate response; embedding checks may cause delay.  
   2. **Recall priority:** In such high-risk scenarios, it is better to **over-detect** than to miss a true emergency.  
      False positives are acceptable; false negatives are not.  
@@ -152,11 +158,16 @@ Thus, we used:
 - **Rule-based filters** for deterministic, high-recall detection (privacy, emergency).  
 - **SentenceTransformer embeddings** for semantic detection (injection, suicide, output privacy).  
 
-The **SentenceTransformer (`all-mpnet-base-v2`)** was chosen because it is:
+For the embedding-based modules, we prioritized **`all-MiniLM-L6-v2`** because it is **smaller, faster, and more efficient** — making it ideal for real-time guardrail use.  
+In cases where MiniLM performance was insufficient (especially in nuanced semantic detection), we switched to **`all-mpnet-base-v2`** to achieve better recall and contextual understanding.
 
-- **Open-source, lightweight, and local**, ensuring full privacy.  
-- Ideal for **short-text intent recognition** tasks.  
-- Produces **interpretable cosine similarity scores** for transparent decisions.  
+In the final implementation:
+
+- `InjectionDetector` and `PrivacyGuardOutput` use **`all-MiniLM-L6-v2`** for low latency and good general performance.  
+- `SuicideDetector` uses **`all-mpnet-base-v2`** to capture subtle emotional and self-harm semantics more accurately.  
+
+This combination balances **speed, accuracy, and resource efficiency**, while keeping the entire system open-source and locally executable.  
+Both models output **interpretable cosine similarity scores**, allowing transparent and auditable decision thresholds.
 
 ---
 
