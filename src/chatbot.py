@@ -98,7 +98,7 @@ class MedicalChatbot:
     def __init__(
         self,
         llm_api_key: str,
-        llm_model: str = "gpt-4o-mini",
+        llm_model: str = "meta-llama/llama-3.3-70b-instruct:free",
         project_root: Optional[str] = None,
         verbose: bool = False,
     ):
