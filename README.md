@@ -72,8 +72,6 @@ project_root/
 │   │   ├── injection_detector.py
 │   │   ├── privacy_guard.py
 │   │   ├── emergency_keywords.json
-│   │   ├── Suicide_Detection.csv
-│   │   └── injection_dataset.parquet
 │   └── output_guards/
 │       └── privacy_guard_output.py
 ```

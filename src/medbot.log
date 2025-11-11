@@ -93,3 +93,28 @@ requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://o
 2025-11-11 16:32:49,380 [INFO] Use pytorch device_name: cuda:0
 2025-11-11 16:32:49,381 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
 2025-11-11 16:32:51,486 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 17:03:32,739 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 17:03:32,739 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 17:03:34,920 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 17:05:28,614 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 17:05:28,614 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 17:05:30,733 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 17:05:58,483 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 211, in _call_llm_api
+    r.raise_for_status()
+  File "C:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 17:09:28,396 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 17:09:28,396 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 17:09:30,487 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 17:13:12,689 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 17:13:12,689 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 17:13:14,772 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 17:15:09,485 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 17:15:09,485 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 17:15:11,602 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 17:18:01,227 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 17:18:01,227 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 17:18:03,266 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2

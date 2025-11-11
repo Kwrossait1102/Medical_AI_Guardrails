@@ -171,7 +171,7 @@ class InjectionDetector:
         with open(os.path.join(artifact_dir, "meta.json"), "r") as f:
             meta = json.load(f)
         model = SentenceTransformer(meta["model_name"], device=DEVICE)
-        proto = torch.load(os.path.join(artifact_dir, "injection_proto.pt"), map_location=DEVICE)["injection_proto"]
+        proto = torch.load(os.path.join(artifact_dir, "injection_proto.pt"), map_location=DEVICE, weights_only=False)["injection_proto"]
         threshold = meta["threshold"]
         kd = InjectionKeywordDetector(os.path.join(artifact_dir, "injection_keywords.json"))
         return cls(proto, threshold, model, kd)
