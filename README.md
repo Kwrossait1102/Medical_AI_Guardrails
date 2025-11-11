@@ -125,26 +125,32 @@ The evaluation report will be generated automatically in tests/ and saved as tes
 
 ## Project Structure
 
-```bash
+```
 .
-├── chatbot.py                          # Main chatbot application
-├── requirements.txt                    # Python dependencies
-├── .env                                # Environment variables
-├── README.md                           # This file
+├── chatbot.py                        # Main chatbot application
+├── DESIGN.md                         # System design documentation
+├── README.md                         # Usage guide and overview
+├── requirements.txt                  # Python dependencies
+├── .env.example                      # Template for environment variables
+├── .gitignore                        # Ignore local and sensitive files
 └── guardrails/
     ├── input_guards/
-    │   ├── emergency_detector.py       # Emergency detection
-    │   ├── suicide_detector.py         # Suicide risk detection
-    │   ├── injection_detector.py       # Prompt injection detection
-    │   ├── privacy_guard.py            # Input privacy guard
-    │   ├── emergency_keywords.json     # Emergency keywords
-    │   ├── Suicide_Detection.csv       # Suicide training data
-    │   ├── injection_dataset.parquet   # Injection training data
-    │   ├── suicide_proto_artifacts/    # Pre-trained suicide detection model
-    │   └── injection_proto_artifacts/  # Pre-trained injection detection model
+    │   ├── emergency_detector.py     # Emergency detection
+    │   ├── suicide_detector.py       # Suicide risk detection
+    │   ├── injection_detector.py     # Prompt injection / jailbreak detection
+    │   ├── privacy_guard.py          # Input-side privacy filter
+    │   ├── emergency_keywords.json   # Keyword list for emergency detection
+    │   ├── suicide_proto_artifacts/  # Pretrained suicide detection prototype
+    │   │   ├── suicide_proto.pt
+    │   │   └── meta.json             
+    │   └── injection_proto_artifacts
+    │       ├── injection_proto.pt
+    │       └── meta.json             
     └── output_guards/
-        ├── privacy_guard_output.py     # Output privacy guard
-        └── output_proto_artifacts/     # Pre-trained output guard prototypes
+        ├── privacy_guard_output.py   # Output-side privacy guard (prototype-based redaction)
+        └── output_proto_artifacts/
+            └── scope_prototypes.pt   # Output privacy prototypes
+
 ```
 
 ## Configuration
