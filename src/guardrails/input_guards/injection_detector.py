@@ -214,11 +214,11 @@ def load_injection_dataset(local_file: str = None, max_samples: int = 2000):
                 print(f"✓ Loaded {len(attack_texts)} attack samples from parquet")
                 
             except ImportError:
-                print("❌ Error: pandas and pyarrow are required for parquet files")
+                print("Error: pandas and pyarrow are required for parquet files")
                 print("Install with: pip install pandas pyarrow")
                 raise
             except Exception as e:
-                print(f"❌ Error loading parquet file: {e}")
+                print(f" Error loading parquet file: {e}")
                 raise
         
         # Load CSV file
@@ -247,11 +247,11 @@ def load_injection_dataset(local_file: str = None, max_samples: int = 2000):
                 print(f"✓ Loaded {len(attack_texts)} attack samples from CSV")
                 
             except ImportError:
-                print("❌ Error: pandas is required for CSV files")
+                print("Error: pandas is required for CSV files")
                 print("Install with: pip install pandas")
                 raise
             except Exception as e:
-                print(f"❌ Error loading CSV file: {e}")
+                print(f"Error loading CSV file: {e}")
                 raise
         
         # Load plain text file
@@ -265,7 +265,7 @@ def load_injection_dataset(local_file: str = None, max_samples: int = 2000):
             print(f"✓ Loaded {len(attack_texts)} attack samples from text file")
         
         else:
-            print(f"❌ Unsupported file format: {file_ext}")
+            print(f"Unsupported file format: {file_ext}")
             print("Supported formats: .txt, .csv, .parquet")
             raise ValueError(f"Unsupported file format: {file_ext}")
     
@@ -545,7 +545,7 @@ class InjectionDetector:
         if not text or not text.strip():
             return -1e9
         
-        emb = self.model.encode([text], convert_to_tensor=True, device=DEVICE)
+        emb = self.model.encode([text], convert_to_tensor=True, device=DEVICE, show_progress_bar=False)
         emb = util.normalize_embeddings(emb)
         return util.cos_sim(emb, self.injection_proto).item()
     

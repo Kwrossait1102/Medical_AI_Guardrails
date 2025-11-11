@@ -84,7 +84,7 @@ class OneProtoSuicideDetector:
     def similarity(self, text: str) -> float:
         if not text or not text.strip():
             return -1e9
-        emb = self.model.encode([text], convert_to_tensor=True, device=DEVICE)
+        emb = self.model.encode([text], convert_to_tensor=True, device=DEVICE, show_progress_bar=False)
         emb = util.normalize_embeddings(emb)
         return util.cos_sim(emb, self.suicide_proto).item()
 
