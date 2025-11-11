@@ -113,6 +113,16 @@ Commands:
 - Type `verbose` to toggle detailed logging
 - Type `quit`, `exit`, or `bye` to exit
 
+### Running Test
+
+Run the tests from the root directory of this project:
+
+```bash
+pytest -q
+```
+
+The evaluation report will be generated automatically in tests/ and saved as test_results.md.
+
 ## Project Structure
 
 ```bash
