@@ -1,4 +1,8 @@
 import os
+
+os.environ['TOKENIZERS_PARALLELISM'] = 'false' 
+os.environ['TRANSFORMERS_VERBOSITY'] = 'error'
+
 import sys
 import json
 import logging

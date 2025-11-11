@@ -1,0 +1,95 @@
+2025-11-11 16:07:05,221 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 16:07:05,221 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 16:07:07,332 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 16:07:24,181 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:08:06,103 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:08:16,331 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:08:34,378 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:14:49,983 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:16:57,319 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:18:50,206 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:18:50,553 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:18:50,727 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:22:56,078 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 16:22:56,078 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 16:22:58,185 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 16:23:50,479 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 16:23:50,479 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 16:23:52,570 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 16:25:48,335 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 16:25:48,335 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 16:25:50,508 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 16:25:59,594 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:26:02,909 [ERROR] OpenRouter API error
+Traceback (most recent call last):
+  File "e:\medical-ai-guardrails\src\chatbot.py", line 207, in _call_llm_api
+    r.raise_for_status()
+  File "c:\Users\卜乾禹\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-11 16:30:59,665 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 16:30:59,665 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 16:31:01,916 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-11 16:32:49,380 [INFO] Use pytorch device_name: cuda:0
+2025-11-11 16:32:49,381 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-11 16:32:51,486 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
