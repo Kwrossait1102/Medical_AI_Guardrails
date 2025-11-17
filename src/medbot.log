@@ -118,3 +118,12 @@ requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://o
 2025-11-11 17:18:01,227 [INFO] Use pytorch device_name: cuda:0
 2025-11-11 17:18:01,227 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
 2025-11-11 17:18:03,266 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-15 21:13:24,782 [INFO] Use pytorch device_name: cuda:0
+2025-11-15 21:13:24,782 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-15 21:13:28,058 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-16 00:40:39,788 [INFO] Use pytorch device_name: cuda:0
+2025-11-16 00:40:39,788 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-16 00:40:42,890 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-16 19:36:00,117 [INFO] Use pytorch device_name: cuda:0
+2025-11-16 19:36:00,121 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-11-16 19:36:02,843 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
